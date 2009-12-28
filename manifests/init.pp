@@ -5,6 +5,7 @@
 class exim {
     case $operatingsystem {
         gentoo: { include exim::gentoo }
+        centos: { include exim::centos }
         default: { include exim::base }
     }
     if $use_munin {
